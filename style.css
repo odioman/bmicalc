@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(74, 232, 116);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+input {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.calculate {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+    background-color: rgb(10, 130, 42);
+}
+
+.calculate:hover {
+    cursor: pointer;
+    background-color: rgb(74, 232, 116);
+    color: white;
+    border-color: white;
+
+}

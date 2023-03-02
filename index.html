@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>Body Mass Index Calculator</title>
+</head>
+<body>
+    <h2 class="title">Body Mass Index (BMI) Calculator</h2>
+    <h3 class="height-title">Your Height: <input type="text" class="feet" id="feet" placeholder="Feet"></input><input type="text" class="inches" id="inches" placeholder="Inches"></h3>
+    <h3 class="weight-title">Your Weight: <input type="text" class="weight" id="weight" placeholder="Pounds"></h3>
+    <button type="submit" class="calculate" id="calculate" onclick="formula()">Calculate</button>
+    <h4 class="chart">
+        <br>Underweight: Less than 18.5</br>
+        <br>Normal Weight: 18.5-24.9</br>
+        <br>Overweight: 25-29.9</br>
+        <br>Obesity: 30 or greater</br>
+    </h4>
+    <h4 class="bmi-total" id="bmi-total"></h4>
+    <h4 class="weight-rating" id="weight-rating"></h4>
+    <script src="app.js"></script>
+</body>
+</html>
