@@ -10,12 +10,13 @@ function formula(feetAndInches, weightValue) {
     var weightValue = parseFloat(weight.value);
 
     let bmi = (weightValue / Math.pow(feetAndInches, 2)) * 703
-    
-    console.log(weightValue);
-    console.log(feetAndInches);
+    console.log("bmi: ", bmi)
+    renderChanges({ bmi })
+}
+
+function renderChanges({ bmi }) {
     console.log(bmi);
     console.log(bmi.toFixed(1));
-    
     bmiTotal.textContent = "Your BMI is " + bmi.toFixed(1);
 
     if (parseFloat(bmi.toFixed(1)) < 18.5) {
@@ -28,9 +29,6 @@ function formula(feetAndInches, weightValue) {
         weightRating.textContent = "You are obese"
     }
 }
-
-document.addEventListener('submit', (e) => {
+document.addEventListener("submit", (e) => {
     e.preventDefault();
-})
-
-    
+  });
